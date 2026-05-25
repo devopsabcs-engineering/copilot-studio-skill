@@ -1,0 +1,17 @@
+{% if page.lang == 'fr' %}
+  {%- assign fr_pages = site.pages | where: "lang", "fr" | sort: "permalink" -%}
+  <nav role="navigation" aria-label="Navigation principale (français)" class="site-nav">
+    <ul class="nav-list">
+      {% for p in fr_pages %}
+        {% if p.nav_exclude %}{% continue %}{% endif %}
+        <li class="nav-list-item">
+          <a href="{{ p.url | relative_url }}" class="nav-list-link{% if p.url == page.url %} active{% endif %}">
+            {{ p.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% else %}
+  {% include_cached components/site_nav.html %}
+{% endif %}

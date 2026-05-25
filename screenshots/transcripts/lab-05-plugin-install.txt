@@ -1,0 +1,14 @@
+PS C:\workshop> copilot plugin install copilot-studio
+Installing plugin 'copilot-studio'...
+Resolving dependencies...
+Downloading copilot-studio@0.4.2 (1.8 MB)
+Verifying signature...
+Plugin 'copilot-studio' installed successfully.
+
+Available skills:
+  @copilot-studio:copilot-studio-author
+  @copilot-studio:copilot-studio-publish
+  @copilot-studio:copilot-studio-test
+
+Run `copilot plugin list` to see all installed plugins.
+PS C:\workshop>

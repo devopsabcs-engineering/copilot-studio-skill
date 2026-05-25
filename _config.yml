@@ -1,0 +1,23 @@
+title: "Copilot Studio Skill Workshop"
+description: "Build, push, and publish a Copilot Studio agent from VS Code using GitHub Copilot CLI."
+remote_theme: just-the-docs/just-the-docs
+baseurl: "/copilot-studio-skill"
+url: "https://devopsabcs-engineering.github.io"
+search_enabled: true
+heading_anchors: true
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "default" }
+  - scope: { path: "images" }
+    values: { nav_exclude: true }
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .copilot-tracking
+  - screenshots
+  - node_modules
+  - package.json
+  - package-lock.json

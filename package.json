@@ -1,0 +1,17 @@
+{
+  "name": "copilot-studio-skill-screenshots",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Screenshot harness for the bilingual Microsoft Copilot Studio workshop site. Drives Playwright (web + portal) and freeze (terminal) to regenerate the images referenced by EN/FR lab pages.",
+  "scripts": {
+    "screenshots:seed":     "playwright test --project=seed-copilotstudio --headed",
+    "screenshots:web":      "playwright test --project=en-public --project=fr-public",
+    "screenshots:portal":   "playwright test --project=en-copilotstudio --project=fr-copilotstudio",
+    "screenshots:terminal": "pwsh screenshots/scripts/capture-terminal.ps1",
+    "screenshots:promote":  "pwsh screenshots/scripts/promote.ps1",
+    "screenshots":          "npm run screenshots:web && npm run screenshots:portal && npm run screenshots:terminal && npm run screenshots:promote"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

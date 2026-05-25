@@ -1,0 +1,16 @@
+%% Workshop architecture diagram source.
+%% Re-render to images/architecture-diagram.png with one of:
+%%   - GitHub.com — paste this content into a markdown preview, screenshot.
+%%   - Mermaid CLI — `mmdc -i images/architecture-diagram.mmd -o images/architecture-diagram.png -b transparent`
+%%   - mermaid-cli Docker — `docker run --rm -v ${PWD}:/data minlag/mermaid-cli -i /data/images/architecture-diagram.mmd -o /data/images/architecture-diagram.png`
+%% See WI-07 in .copilot-tracking/plans/logs/2026-05-25/bilingual-workshop-site-log.md for the
+%% follow-on work to commit a real architecture-diagram.png to this folder.
+
+flowchart LR
+    A[Maker in VS Code] -->|"@copilot-studio:* commands"| B[GitHub Copilot CLI]
+    B -->|loads plugin scripts| C[skills-for-copilot-studio plugin]
+    C -->|spawns subprocess| D[Copilot Studio VS Code extension LSP binary]
+    D -->|authenticated HTTPS| E[(Copilot Studio cloud)]
+    E -->|YAML files on disk| F[Local workspace folder]
+    F -->|VS Code editor| A
+    E -->|test pane| G[Tested agent]
