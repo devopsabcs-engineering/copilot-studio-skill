@@ -10,7 +10,7 @@ nav_exclude: true
 > 🇬🇧 **[English version](../)**
 
 <p align="center">
-  <img src="{{ '/assets/branding/logo-128.png' | relative_url }}" alt="Logo de l'atelier Copilot Studio Skill" width="128" height="128" />
+  <img src="{{ '/assets/branding/logo-128.svg' | relative_url }}" alt="Logo de l'atelier Copilot Studio Skill" width="128" height="128" />
 </p>
 
 ## Vue d'ensemble

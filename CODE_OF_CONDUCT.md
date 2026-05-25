@@ -1,6 +1,7 @@
 ---
 title: "Microsoft Open Source Code of Conduct"
 description: "This project follows the Microsoft Open Source Code of Conduct."
+nav_exclude: true
 ---
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

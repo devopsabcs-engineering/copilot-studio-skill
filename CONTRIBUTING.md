@@ -1,6 +1,7 @@
 ---
 title: "Contributing to the Copilot Studio Skill Workshop"
 description: "Translation policy, screenshot harness, and one-time repo settings for contributors."
+nav_exclude: true
 ---
 
 Thanks for helping evolve the workshop. This guide covers the three things contributors most often get wrong: keeping French in sync with English, capturing screenshots consistently, and the one-time settings that have to land in the GitHub repo before the first Pages deploy works.

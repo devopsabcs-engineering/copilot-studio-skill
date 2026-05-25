@@ -15,7 +15,11 @@ The site head (`_includes/head_custom.html`) and homepage references expect thes
 * `favicon.ico` — 16×16 + 32×32 multi-resolution ICO. Wired into `<link rel="icon" type="image/x-icon">`.
 * `favicon-32x32.png` — 32×32 PNG. Wired into `<link rel="icon" type="image/png">`.
 * `apple-touch-icon.png` — 180×180 PNG. Wired into `<link rel="apple-touch-icon">`.
-* `logo-128.png` — 128×128 PNG. Referenced inline from `index.md` and `fr/index.md` via centered `<img>` tag (Phase 2).
+* `logo-128.png` — 128×128 PNG. The final logo. When this lands, swap the `index.md` / `fr/index.md` `<img>` `src` back from `logo-128.svg` to `logo-128.png` and delete the SVG.
+
+## Interim placeholder shipped
+
+* `logo-128.svg` — gradient “CSS” badge used as the centered homepage logo until the final `logo-128.png` lands. Safe to delete once WI-07 ships.
 
 ## Build impact while empty
 

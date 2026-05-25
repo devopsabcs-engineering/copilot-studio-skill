@@ -8,7 +8,7 @@ permalink: /
 > 🇫🇷 **[Version française](fr/)**
 
 <p align="center">
-  <img src="{{ '/assets/branding/logo-128.png' | relative_url }}" alt="Copilot Studio Skill Workshop logo" width="128" height="128" />
+  <img src="{{ '/assets/branding/logo-128.svg' | relative_url }}" alt="Copilot Studio Skill Workshop logo" width="128" height="128" />
 </p>
 
 ## Overview
